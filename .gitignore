@@ -1,2 +1,28 @@
+# ignore drive data (i.e. game contents)
+# if there is a good reason, e.g. including a config file
+# then add a .gitinclude in the game root dir to include
+# the config files ONLY.
 drive_?/
 DRIVE_?/
+
+# ignore most archives that may be lying around
+*zip
+*ZIP
+*7zp
+*7ZP
+*7z
+*7Z
+*rar
+*RAR
+*ar
+*AR
+*iso
+*ISO
+*dmg
+*DMG
+*tar
+*gz
+*br
+*bz2
+
+# todo add those .r00 patterns
