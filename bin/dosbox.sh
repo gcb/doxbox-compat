@@ -1,4 +1,11 @@
 #!/bin/env bash
+
+# sanity check so we don't litter unexpected locations.
+if [ ! -d drive_c ]; then
+	echo "You shuld execute ${0} from inside the dosbox-compat game dir. The one that contains the drive_c directory."
+	exit 2
+fi
+
 set -xe
 
 # COM file to make keyboard repeat fast:
